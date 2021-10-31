@@ -12,35 +12,43 @@ Enjoy Discords free and unlimited storage...
 
 Prepare:
 
-	you need the following PIP packages:
+Clone this from Github,
+make sure there either a folder called temp or a file called savefile.boka in the cloned folder.
+if not create them (empthy).
 
-		Discord:
+you need the following PIP packages:
 
-			sudo pip install discord
+Discord:
 
-		Filesplit:
+	sudo pip install discord
 
-			sudo pip install filesplit
+Filesplit:
 
-	you will need a Discord "server"s token too. This could help you:
+	sudo pip install filesplit
 
-		Download Discord and generate one
+you will need a Discord "server"s token too. This could help you:
 
-			sudo pamac install snapd
+Download Discord and generate one
 
-			sudo snap install discord --classic
+	sudo pamac install snapd
 
-		an api key for this server is required:
+	sudo snap install discord --classic
 
-			here is how to create one:
+an api key for this server is required:
 
-				https //www youtube com/watch?v=gT_1c9YFffk
+here is how to create one:
 
-		open DiscordStorageV3Beta5.py and paste the bot token between <TOKEN = "> and <"> in line 5.
+	https://www.youtube.com/watch?v=gT_1c9YFffk
 
-	Import StorageAPI.py
+open DiscordStorageV3Beta5.py and paste the bot token between <TOKEN = "> and <"> in line 5.
+
+Use it as CLI 
+
+execute StoragCLI.sh in linux Console.
 
 Use it as API
+
+	Import StorageAPI.py
 
 Uploading: 
 
