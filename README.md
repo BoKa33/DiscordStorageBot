@@ -52,7 +52,7 @@ Use it as API
 
 	import StorageAPI.py
 
-Uploading: 
+Upload: 
 
 	upload(FileName)
 
