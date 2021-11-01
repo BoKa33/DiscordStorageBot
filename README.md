@@ -42,11 +42,15 @@ here is how to create one:
 
 open DiscordStorageV3Beta5.py and paste the bot token between <TOKEN = "> and <"> in line 5.
 
+
+
 Use it as CLI 
 
 execute StoragCLI.sh in Linux console.
 
 or execute StorageCLI.py in cmd with using python.
+
+
 
 Use it as API
 
