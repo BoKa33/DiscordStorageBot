@@ -2,7 +2,7 @@
 
 Discord Storage V.3.5 (Beta)
 
-Made by Bosse
+Made by BoKa
 
 *********************************
 
