@@ -54,41 +54,36 @@ Uploading:
 
 		upload(FileName)
 
-			Uploads a file. If you have already uploaded another file with the same name it will throw an exception,
-
-			so make sure that the name of the file you want to upload was not used before or use the Overwrite method. 
-		
-			If you want to check which filenames are already in use look at getall() filename defines two things:
-
-			The file u want to upload, and its the string u have to use in the download method to get your file back.
+Uploads a file. If you have already uploaded another file with the same name it will throw an exception,
+so make sure that the name of the file you want to upload was not used before or use the Overwrite method. 
+If you want to check which filenames are already in use look at getall() filename defines two things:
+The file u want to upload, and its the string u have to use in the download method to get your file back.
 
 Download:
 
 		download(FileName)
 
-			Downloads a file. If the file doesn't exists it will throw an exception. Paste in the filename u have used in the Upload function,
-
-			and the requested file will apear in the folder where this file is probably in.
+Downloads a file. If the file doesn't exists it will throw an exception. Paste in the filename u have used in the Upload function,
+and the requested file will apear in the folder where this file is probably in.
 
 Get all filenames:
 
 		getall()
 
-			Returns all the filenames from the Savefile. 
+Returns all the filenames from the Savefile. 
 
 Delete:
 
 		delete(FileName)
 
-			Deletes old files, u can reuse the filenames afterwards
+Deletes old files, u can reuse the filenames afterwards
 
 Overwrite:
 
 		overwrite(Filename)
 
-			if theres already a file with the given filename it does the same thing like upload just deleting the filename first.
-
-			if there is not it throws an exception.
+if theres already a file with the given filename it does the same thing like upload just deleting the filename first.
+if there is not it throws an exception.
 
 
 Have fun.
