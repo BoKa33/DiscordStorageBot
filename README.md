@@ -52,7 +52,7 @@ Use it as API
 
 Uploading: 
 
-		upload(FileName)
+	upload(FileName)
 
 Uploads a file. If you have already uploaded another file with the same name it will throw an exception,
 so make sure that the name of the file you want to upload was not used before or use the Overwrite method. 
@@ -61,26 +61,26 @@ The file u want to upload, and its the string u have to use in the download meth
 
 Download:
 
-		download(FileName)
+	download(FileName)
 
 Downloads a file. If the file doesn't exists it will throw an exception. Paste in the filename u have used in the Upload function,
 and the requested file will apear in the folder where this file is probably in.
 
 Get all filenames:
 
-		getall()
+	getall()
 
 Returns all the filenames from the Savefile. 
 
 Delete:
 
-		delete(FileName)
+	delete(FileName)
 
 Deletes old files, u can reuse the filenames afterwards
 
 Overwrite:
 
-		overwrite(Filename)
+	overwrite(Filename)
 
 if theres already a file with the given filename it does the same thing like upload just deleting the filename first.
 if there is not it throws an exception.
