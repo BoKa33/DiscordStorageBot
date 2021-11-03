@@ -37,9 +37,7 @@ Download Discord and generate one
 
 an api key for this server is required:
 
-here is how to create one:
-
-	https://www.youtube.com/watch?v=gT_1c9YFffk
+[here](https://www.youtube.com/watch?v=gT_1c9YFffk) is how to create one.
 
 open DiscordStorageV3Beta5.py and paste the bot token between <TOKEN = "> and <"> in line 5.
 
