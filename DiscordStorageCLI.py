@@ -1,4 +1,4 @@
-from StorageAPI import *
+from StorageAPI import *;import os
 
 line = ("\033[92m*\033[0m"*60)
 
@@ -43,6 +43,10 @@ removingR = "File was succesfully removed!"
 
 # ...
 
+uploadingUsed = "Do you want to rename the file?"
+
+uploadingNewName = "Type new name here: "
+
 uploadingR = "Shall we download the file for you, to make sure its intact? Then remove the original file from the folder, and enter y, else \033[92mjust press Enter: "
 
 #...
@@ -51,6 +55,8 @@ checkR = "CheckDownload is ready, you can check if the file is working now... Is
 
 # --- Errors ---
 
+used = "Identifier is already in use"
+
 uploadE = "Oops, there is something waiting to be fixed... \nMake sure that there is not a file with the same mame already uploaded,\n and that the token and channel id in StorageAPI.py is valid. \nDid you we ran out of storage? \nOr maybe theres an error because you are not connected to the internet, \naka. theres a firewall filtering Discord? \nIs there a 'savefile.boka' in this folder? If not create one. \nThen try again! "
 
 downloadE = "Oops, there is something waiting to be fixed... \nDoes The file exists? did you ran out of storage? \nMaybe theres an error because you are not connected to the internet, \naka. theres a firewall filtering Discord?. \n \nTry again!"
@@ -58,7 +64,7 @@ downloadE = "Oops, there is something waiting to be fixed... \nDoes The file exi
 removeE = "Oops, there is something waiting to be fixed... \nDoes The file exists?"
 
 listE = "Oops, there is something waiting to be fixed... Is there a Savefile.boka inside this folder?"
-
+file = None
 def Println():
     print(line)
 def Printline():
@@ -89,24 +95,39 @@ def Usage():
 def Oupload():
     _ = input(uploading)
     Printline()
+    global file
     file = input(uploadingY)
     Printline()
     print(uploading3)
-    try:
-        upload(file);
-        Printline()
-        check = input(uploadingR)
-        Printline()
-        if check == "y":
-            print(downloading2)
+    def tryUpload():
+        try:
+            global file
+            upload(file);
             Printline()
-            download(file)
+            check = input(uploadingR)
             Printline()
-            print(checkR)
-        else:
-            print(downloadingR)
-    except Exception as e:
-            Printline();print(e);Printline();print(uploadE)
+            if check == "y":
+                print(downloading2)
+                Printline()
+                download(file)
+                Printline()
+                print(checkR)
+            else:
+                print(downloadingR)
+        except Exception as e:
+            if str(e) == used:
+                print("hey")
+                Printline();print(e);print()
+                print(uploadingUsed);print()
+                newName = input(uploadingNewName)
+                
+                os.rename(file, newName)
+                file = newName
+                tryUpload()
+                Printline()
+            else:
+                Printline();print(e);Printline();print(uploadE)
+    tryUpload()
     
 def Odownload():
     file = input(downloading)
