@@ -19,11 +19,11 @@ if not create them (empthy).
 
 you need the following [PIP](https://pypi.org/project/pip/) packages:
 
-Discord:
+##### Discord:
 
 	sudo pip install discord
 
-Filesplit:
+##### Filesplit:
 
 	sudo pip install filesplit
 
@@ -39,7 +39,7 @@ an api key for this server is required:
 
 [here](https://www.youtube.com/watch?v=gT_1c9YFffk) is how to create one.
 
-open DiscordStorageV3Beta5.py and paste the bot token between <TOKEN = "> and <"> in line 5.
+open DiscordStorageV3Beta5.py and paste the bot token between `TOKEN = "` and `"` in line 5.
 
 
 
@@ -91,7 +91,7 @@ or execute StorageCLI.py in cmd with using python.
  If there is not it throws an exception.
 
 
-And the most important: Have fun.
+##### And the most important: Have fun.
 
 
 
