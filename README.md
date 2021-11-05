@@ -59,29 +59,29 @@ or execute StorageCLI.py in cmd using python.
 
 	upload(FileName)
 
- Uploads a file. If you have already uploaded another file with the same name it will throw an exception,
- so make sure that the name of the file you want to upload was not used before or use the Overwrite method. 
- If you want to check which filenames are already in use look at getall() filename defines two things:
- The file u want to upload, and its the string u have to use in the download method to get your file back.
+ uploads a file. If you have already uploaded another file with the same name it will throw an exception,
+ so make sure that the name of the file you want to upload was not used before or use the overwrite method. 
+ If you want to check which filenames are already in use look at getall(). FileName defines two things:
+ The file you want to upload, and it's the string you have to use in the download method to get your file back.
 
 ### Download:
 
 	download(FileName)
 
- Downloads a file. If the file doesn't exists it will throw an exception. Paste in the filename u have used in the upload function,
+ downloads a file. If the file doesn't exist it will throw an exception. Paste in the filename you have used in the upload function,
  and the requested file will apear in the folder where this file is probably in.
 
 ### Get all filenames:
 
 	getall()
 
- Returns all the filenames from the savefile. 
+ returns all the filenames from the savefile. 
 
 ### Delete:
 
 	delete(FileName)
 
- Deletes old files, u can reuse the filenames afterwards
+ deletes old files, so you can reuse the filenames afterwards
 
 ### Overwrite:
 
