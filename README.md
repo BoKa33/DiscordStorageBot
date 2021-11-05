@@ -14,10 +14,10 @@ _______________________________________________
 ## Prepare
 
 Clone this from Github,
-make sure there either a folder called temp or a file called savefile.boka in the cloned folder.
-if not create them (empthy).
+make sure there is a folder called temp and a file called savefile.boka in the cloned folder.
+If not create those (empty).
 
-you need the following [PIP](https://pypi.org/project/pip/) packages:
+You need the following [PIP](https://pypi.org/project/pip/) packages:
 
 ##### Discord:
 
@@ -27,7 +27,7 @@ you need the following [PIP](https://pypi.org/project/pip/) packages:
 
 	sudo pip install filesplit
 
-you will need a Discord "server"s token too. This could help you:
+You will need a Discord "servers" token too. This may help you:
 
 Download Discord and generate one
 
@@ -35,17 +35,17 @@ Download Discord and generate one
 
 	sudo snap install discord --classic
 
-an api key for this server is required:
+an API key for this server is required:
 
-[here](https://www.youtube.com/watch?v=gT_1c9YFffk) is how to create one.
+[Here](https://www.youtube.com/watch?v=gT_1c9YFffk) is how to create one.
 
-open DiscordStorageV3Beta5.py and paste the bot token between `TOKEN = "` and `"` in line 5.
+Open DiscordStorageV3Beta5.py and paste the bot token between `TOKEN = "` and `"` in line 5.
 
 
 
 ## Use it as CLI 
 
-execute StorageCLI.sh in Linux console.
+Execute StorageCLI.sh in Linux console.
 
 or execute StorageCLI.py in cmd with using python.
 
