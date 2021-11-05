@@ -45,9 +45,9 @@ Open DiscordStorageV3Beta5.py and paste the bot token between `TOKEN = "` and `"
 
 ## Use it as CLI 
 
-Execute StorageCLI.sh in Linux console.
+Execute StorageCLI.sh in Linux console,
 
-or execute StorageCLI.py in cmd with using python.
+or execute StorageCLI.py in cmd using python.
 
 
 
